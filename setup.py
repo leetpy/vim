@@ -21,7 +21,7 @@ if __name__ == "__main__":
     shutil.copy2(os.path.join(workdir, 'vimrc'), target_vimrc_path)
 
     # theme setting
-    shutil.move(os.path.join(target_vim_dir, "molkai/colors"),
+    shutil.move(os.path.join(target_vim_dir, "molokai/colors"),
                 os.path.join(target_vim_dir, "colors"))
-    shutil.rmtree(os.path.join(target_vim_dir, "molkai"))
+    shutil.rmtree(os.path.join(target_vim_dir, "molokai"))
 
