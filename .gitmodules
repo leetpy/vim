@@ -7,3 +7,6 @@
 [submodule "vim/molokai"]
 	path = vim/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "vim/bundle/vim-commentary"]
+	path = vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
