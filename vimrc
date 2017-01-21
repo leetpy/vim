@@ -115,6 +115,13 @@ autocmd BufWritePre *.go :GoFmt
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 " autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 au FileType go nmap <Leader>g <Plug>(go-def)
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 """"""""""""""""""""""""""""""""
 " templeate files
