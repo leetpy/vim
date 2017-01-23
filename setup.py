@@ -5,8 +5,12 @@ import shutil
 
 
 def clean(home):
-    shutil.rmtree(os.path.join(home, ".vim"))
-    os.remove(os.path.join(home, ".vimrc"))
+    vim_home = os.path.join(home, ".vim")
+    if os.path.exists(vim_home):
+        shutil.rmtree(vim_home)
+    vim_conf = os.path.join(home, ".vimrc")
+    if os.path.exists(vim_conf):
+        os.remove(os.path.join(home, ".vimrc")
 
 
 if __name__ == "__main__":
