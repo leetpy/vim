@@ -124,7 +124,15 @@ au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 """"""""""""""""""""""""""""""""
+" build 
+""""""""""""""""""""""""""""""""
+autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
+autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
+autocmd filetype sh nnoremap <F4> :w <bar> exec '!sh '.shellescape('%')<CR>
+
+""""""""""""""""""""""""""""""""
 " templeate files
 """"""""""""""""""""""""""""""""
 autocmd BufNewFile *.go 0r ~/.vim/template/go.tpl  " golang
 autocmd BufNewFile *.py 0r ~/.vim/template/py.tpl  " python
+autocmd BufNewFile *.sh 0r ~/.vim/template.sh.tpl  " shell
