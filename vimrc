@@ -105,7 +105,7 @@ map <F2> :NERDTreeToggle<CR>
 map <Leader>sp :split<CR>
 map <Leader>w <c-w>w<CR>
 map <Leader>q :q<CR>
-
+man <Leader>qo :only<CR>
 
 """"""""""""""""""""""""""""""""
 " golang setting
