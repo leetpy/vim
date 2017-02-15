@@ -13,12 +13,13 @@ python setup.py
 | ----------- | ---------- |
 | build       | F4         |
 | nerd tree   | F2         |
-| split       | <leader>sp |
+| leader      | ,          |
+| split       | ,sp        |
 
 
 
 ### python short key
 
-| go assignments | <leader>g |
+| go assignments | ,g        |
 | -------------- | --------- |
-| go definitions | <leader>d |
+| go definitions | ,d        |
