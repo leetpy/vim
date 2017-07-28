@@ -130,6 +130,7 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
 autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
 autocmd filetype sh nnoremap <F4> :w <bar> exec '!sh '.shellescape('%')<CR>
+autocmd filetype rst nnoremap <F4> :w <bar> exec '!make clean;make html '<CR>
 
 """"""""""""""""""""""""""""""""
 " templeate files
