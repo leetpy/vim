@@ -3,7 +3,7 @@ Usage
 ======
 
 
-install
+Install
 -------
 
 .. code-block:: bash
@@ -14,13 +14,13 @@ install
     python setup.py
 
 
-leader key
+Leader key
 ----------
 
 I use ',' as vim leader key, which you can set your own leader key
 according to personal habits.
 
-theme
+Theme
 -----
 
 There are two nice theme for vim ``molokai`` and ``monokai``,
@@ -32,7 +32,7 @@ You can chagne the theme by config ``~/.vimrc``::
     colorscheme molokai
 
 
-templeate
+Templeate
 ---------
 
 Templates are stored at ``~/.vim/template/``.
@@ -45,13 +45,13 @@ Add your own template
     # for python file
     autocmd BufNewFile *.py 0r ~/.vim/template/py.tpl  " python
 
-build
+Build
 -----
 
 I use ``<F4>`` for build. Currently supports Python C/C++, Go, Shell
 and reStructedText.
 
-short key
+Short key
 ---------
 
 =============== ==========
