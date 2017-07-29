@@ -57,8 +57,8 @@ Short key
 =============== ==========
 Name            Value
 =============== ==========
-NERDTreeToggle  F2
+NERDTreeToggle  <F2>
 split           <leader>sp
-pastetoggle     F9
+pastetoggle     <F9>
 =============== ==========
 
