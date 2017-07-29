@@ -17,7 +17,7 @@ Install
 Leader key
 ----------
 
-I use ',' as vim leader key, which you can set your own leader key
+I use ``,`` as vim leader key, which you can set your own leader key
 according to personal habits.
 
 Theme
