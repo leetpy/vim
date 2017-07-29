@@ -23,7 +23,7 @@ according to personal habits.
 Theme
 -----
 
-There are two nice theme for vim ``molokai`` and ``monokai``,
+Both ``molokai`` and ``monokai`` are nice theme,
 ``molokai`` is better for code highlighting, but when you use
 ssh, it didn't work. So I use ``monokai`` default.
 
