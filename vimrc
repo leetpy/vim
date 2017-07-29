@@ -55,7 +55,7 @@ filetype plugin indent on    " required
 " theme
 """"""""""""""""""""""""""""""""
 syntax enable
-colorscheme molokai
+colorscheme monokai
 
 
 """"""""""""""""""""""""""""""""

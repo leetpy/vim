@@ -28,4 +28,6 @@ if __name__ == "__main__":
     shutil.move(os.path.join(target_vim_dir, "molokai/colors"),
                 os.path.join(target_vim_dir, "colors"))
     shutil.rmtree(os.path.join(target_vim_dir, "molokai"))
+    shutil.move(os.path.join(target_vim_dir, "vim-monokai/colors/monokai.vim",
+                os.path.join(target_vim_dir, "colors", "monokai.vim"))
 

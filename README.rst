@@ -23,17 +23,42 @@ according to personal habits.
 theme
 -----
 
-there are two nice theme for vim ``molokai`` and ``monokai``,
+There are two nice theme for vim ``molokai`` and ``monokai``,
 ``molokai`` is better for code highlighting, but when you use
 ssh, it didn't work. So I use ``monokai`` default.
 
 You can chagne the theme by config ``~/.vimrc``::
 
-    colorscheme monokai
+    colorscheme molokai
+
+
+templeate
+---------
+
+Templates are stored at ``~/.vim/template/``.
+
+Add your own template
+
+#. Touch template file in ``~/.vim/template/`` directory
+#. Add mapping in vimrc::
+
+    # for python file
+    autocmd BufNewFile *.py 0r ~/.vim/template/py.tpl  " python
+
+build
+-----
+
+I use ``<F4>`` for build. Currently supports Python C/C++, Go, Shell
+and reStructedText.
 
 short key
 ---------
 
-=========== ========
-paster mode
+=============== ==========
+Name            Value
+=============== ==========
+NERDTreeToggle  F2
+split           <leader>sp
+pastetoggle     F9
+=============== ==========
 
