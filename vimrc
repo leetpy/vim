@@ -116,6 +116,7 @@ map <Leader>qo :only<CR>
 """"""""""""""""""""""""""""""""
 map <F2> :Tlist<CR>
 let Tlist_Use_Right_Window =1
+let Tlist_Exit_OnlyWindow = 1
 
 
 """"""""""""""""""""""""""""""""
