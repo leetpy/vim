@@ -85,8 +85,8 @@ set ruler           " show where mouse is
 set cursorline      " highlight current line
 let mapleader=","
 set pastetoggle=<F9> 
+set mouse=v         " availabe: a, v, i
 set backspace=indent,eol,start
-set mouse=i
 filetype plugin on
 filetype on
 
@@ -105,7 +105,7 @@ map <F3> :NERDTreeToggle<CR>
 " split
 """"""""""""""""""""""""""""""""
 map sp :vsplit<CR>
-map <TAB> <c-w>w<CR>
+map <TAB> <c-w><c-w>
 map <Leader>w <c-w>w<CR>
 map <Leader>q :q<CR>
 map <Leader>qo :only<CR>
