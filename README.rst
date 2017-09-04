@@ -6,11 +6,11 @@ Usage
 Install
 =======
 
-.. code-block:: bash
+.. code-block:: console
 
-    git clone https://github.com/leetpy/vim.git
-    cd vim
-    ./run.sh
+    $ git clone https://github.com/leetpy/vim.git
+    $ cd vim
+    $ ./run.sh
 
 Update
 ======
@@ -25,6 +25,9 @@ You can update all plugins by execute follow commands:
     $ git submodule foreach --recursive git submodule update 
 
 
+Key Map
+=======
+
 Leader key
 ----------
 
@@ -32,7 +35,7 @@ I use ``,`` as vim leader key, which you can set your own leader key
 according to personal habits.
 
 Theme
------
+=====
 
 Both ``molokai`` and ``monokai`` are nice theme,
 ``molokai`` is better for code highlighting, but when you use
@@ -44,7 +47,7 @@ You can chagne the theme by config ``~/.vimrc``::
 
 
 Templeate
----------
+=========
 
 Templates are stored at ``~/.vim/template/``.
 
@@ -57,7 +60,7 @@ Add your own template
     autocmd BufNewFile *.py 0r ~/.vim/template/py.tpl  " python
 
 Build
------
+=====
 
 I use ``<F4>`` for build. Currently supports Python C/C++, Go, Shell
 and reStructedText.
