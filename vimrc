@@ -103,10 +103,11 @@ map <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""
 " split
 """"""""""""""""""""""""""""""""
-map <Leader>sp :split<CR>
+map sp :vsplit<CR>
+map <TAB> <c-w>w<CR>
 map <Leader>w <c-w>w<CR>
 map <Leader>q :q<CR>
-man <Leader>qo :only<CR>
+map <Leader>qo :only<CR>
 
 """"""""""""""""""""""""""""""""
 " golang setting
@@ -138,3 +139,8 @@ autocmd filetype rst nnoremap <F4> :w <bar> exec '!make clean;make html '<CR>
 autocmd BufNewFile *.go 0r ~/.vim/template/go.tpl  " golang
 autocmd BufNewFile *.py 0r ~/.vim/template/py.tpl  " python
 autocmd BufNewFile *.sh 0r ~/.vim/template.sh.tpl  " shell
+
+
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif

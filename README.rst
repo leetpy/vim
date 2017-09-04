@@ -4,14 +4,25 @@ Usage
 
 
 Install
--------
+=======
 
 .. code-block:: bash
 
     git clone https://github.com/leetpy/vim.git
     cd vim
-    git submodule update --init --recursive
-    python setup.py
+    ./run.sh
+
+Update
+======
+
+You can update all plugins by execute follow commands:
+
+.. code-block:: bash
+
+    $ cd ~/.MyVim
+    $ git pull
+    $ git submodule foreach --recursive git submodule init 
+    $ git submodule foreach --recursive git submodule update 
 
 
 Leader key
@@ -58,7 +69,7 @@ Short key
 Name            Value
 =============== ==========
 NERDTreeToggle  <F2>
-split           <leader>sp
+split           sp
 pastetoggle     <F9>
 =============== ==========
 
