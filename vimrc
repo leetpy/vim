@@ -34,6 +34,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'kien/ctrlp.vim'
+Plugin 'taglist'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -98,7 +99,7 @@ set statusline=%F\ [FORMAT:%{&ff}]\ [LINE:%l(%p%%)-COL:%v(%c)]\ \ %m%r\
 """"""""""""""""""""""""""""""""
 " needtree setting
 """"""""""""""""""""""""""""""""
-map <F2> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""""
 " split
@@ -108,6 +109,14 @@ map <TAB> <c-w>w<CR>
 map <Leader>w <c-w>w<CR>
 map <Leader>q :q<CR>
 map <Leader>qo :only<CR>
+
+
+""""""""""""""""""""""""""""""""
+" taglist 
+""""""""""""""""""""""""""""""""
+map <F2> :Tlist<CR>
+let Tlist_Use_Right_Window =1
+
 
 """"""""""""""""""""""""""""""""
 " golang setting
