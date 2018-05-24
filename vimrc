@@ -76,6 +76,7 @@ set ts=4            " tab 4 space
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set colorcolumn=80  " line length marker
 set cmdheight=1     " height of cmd line (how many lines)
 set nobackup        " don't produce backup file
 set noswapfile      " don't produce swap file
