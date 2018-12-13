@@ -92,20 +92,37 @@ filetype plugin on
 filetype on
 
 """"""""""""""""""""""""""""""""
-" needtree setting
+" set mouse
 """"""""""""""""""""""""""""""""
-set laststatus=2    " location of status information
-set statusline=%F\ [FORMAT:%{&ff}]\ [LINE:%l(%p%%)-COL:%v(%c)]\ \ %m%r\
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc
+
+map <Leader>m :call ToggleMouse()<CR>
 
 """"""""""""""""""""""""""""""""
 " needtree setting
 """"""""""""""""""""""""""""""""
 map <F3> :NERDTreeToggle<CR>
+set laststatus=2    " location of status information
+set statusline=%F\ [FORMAT:%{&ff}]\ [LINE:%l(%p%%)-COL:%v(%c)]\ \ %m%r\
+" autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 """"""""""""""""""""""""""""""""
 " split
 """"""""""""""""""""""""""""""""
-map sp :vsplit<CR>
+map sp :split<CR>
+map vp :vsplit<CR>
 map <TAB> <c-w><c-w>
 map <Leader>w <c-w>w<CR>
 map <Leader>q :q<CR>
@@ -143,6 +160,7 @@ autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<
 autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
 autocmd filetype sh nnoremap <F4> :w <bar> exec '!sh '.shellescape('%')<CR>
 autocmd filetype rst nnoremap <F4> :w <bar> exec '!make clean;make html '<CR>
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 """"""""""""""""""""""""""""""""
 " templeate files
