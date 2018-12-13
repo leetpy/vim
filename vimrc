@@ -92,7 +92,12 @@ filetype plugin on
 filetype on
 
 """"""""""""""""""""""""""""""""
-" set mouse
+" toggle number
+""""""""""""""""""""""""""""""""
+nmap <Leader>n :set invnumber<CR>
+
+""""""""""""""""""""""""""""""""
+" toggle mouse
 """"""""""""""""""""""""""""""""
 function! ToggleMouse()
     " check if mouse is enabled
